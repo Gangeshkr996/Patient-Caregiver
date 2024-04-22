@@ -7,6 +7,8 @@ $secondry-color: #001C5D;
 $tertiary-color:#c5007e;
 $white-color:#ffffff;
 $app-background-color:'#fafafa';
+$days-timer-background-color: #008AB4;
+$current-assess-text: #B5007C;
 
 *{
   margin: 0;
@@ -228,4 +230,71 @@ height: 100%;
 ////
 .forgotModal{
   padding: 20px;
+}
+
+.daysTimer{
+  height: 70px;
+  width: 70px;
+  border: 2px solid $days-timer-background-color;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.countdown-wrapper{
+  height: 200px;
+  border: none;
+  align-content: center;
+  background-color: #ffff;
+  padding: 0px 100px;
+}
+
+.carousel-inner{
+  border-radius: 50px;
+  height: 100%;
+  width: 90%;
+}
+
+.assignment-toogle{
+  border: 1px solid transparent;
+  width: 50%;
+}
+
+.nav-tabs{
+  justify-content: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid $secondry-color;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 50%;
+  color: $secondry-color;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: $secondry-color;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.assess-helper-text{
+  color: $current-assess-text;
 }

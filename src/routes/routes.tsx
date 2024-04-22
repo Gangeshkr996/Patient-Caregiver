@@ -6,6 +6,8 @@ import PatientWelcomeScreen from "../features/WelcomeStack/Patient/WelcomeScreen
 import PatientConfirmScreen from "../features/WelcomeStack/Patient/ConfirmScreen";
 import InviteCaregiver from "../features/WelcomeStack/Patient/InviteCaregiver";
 import CompleteScreen from "../features/WelcomeStack/Patient/CompleteScreen";
+import Home from "../features/AppStack/Home/Home";
+import Assessments from "../features/AppStack/Assessments/Assessments";
 
 export const router = createBrowserRouter([
     {
@@ -42,7 +44,17 @@ export const router = createBrowserRouter([
         path:'/completePatient',
         element:<CompleteScreen/>,
         errorElement: <h1>Page Not Found</h1>
-    }
+    },
+    {
+        path:'/home',
+        element:<Home/>,
+        errorElement: <h1>Page Not Found</h1>
+    },
+    {
+        path:'/assessments',
+        element:<Assessments/>,
+        errorElement: <h1>Page Not Found</h1>
+    },
     
 ])
 // ResetPassword
