@@ -1,0 +1,34 @@
+@use "./color.scss" as color;
+@use "./size.scss" as size;
+
+$app_font: 'Satoshi-Regular';
+$app_font_bold: 'Satoshi-Bold';
+
+@mixin btn_style {
+    border-radius: size.$btn_border_radius;
+    width: auto;
+    height: 52px;
+    padding: size.$btn_padding;
+    font-family: $app_font;
+    cursor: pointer;
+    line-height: 10px;
+}
+
+@mixin input_label_style {
+    color: color.$input_label_color;
+    font-family: $app_font;
+    font-size: size.$input_label_size;
+    margin-bottom: size.$input_label_margin_bottom;
+    margin-left: size.$input_label_margin_bottom;
+}
+
+@mixin form_input_style {
+    width: 100%;
+    height: size.$input_height;
+    border: size.$border_form_width solid color.$border_primary_color;
+    border-radius: size.$input_border_radius;
+    padding: size.$input_padding;
+    font-size: size.$input_size;
+    font-family: $app_font_bold;
+    color: color.$input_color;
+}

@@ -1,0 +1,231 @@
+@import url(./assets/fonts/satoshi.css);
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+
+
+$primary-color: #0095B9;
+$secondry-color: #001C5D;
+$tertiary-color:#c5007e;
+$white-color:#ffffff;
+$app-background-color:'#fafafa';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  line-height: normal;
+}
+
+body {
+    margin: 0;
+    font: 'Satoshi';
+    font-family: 'Satoshi Bold Italic',
+      'Satoshi Bold',
+      'Satoshi-Regular',
+      'Satoshi Light',
+      'Satoshi Light Italic',
+      'Satoshi Regular',
+      'Satoshi Italic',
+      'Satoshi Medium',
+      'Satoshi Medium Italic',
+      'Satoshi Black',
+      'Satoshi Black Italic', ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll !important;
+    padding: 0 !important;
+    background-color: $app-background-color;
+  }
+
+p {
+    color: $secondry-color;
+    font-family: 'Satoshi-Regular';
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+a{
+  text-decoration: underline;
+  font-size: 18px;
+  cursor: pointer;
+  color: $secondry-color;
+}
+
+//Footer
+
+.footer{
+  background-color: $secondry-color;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  p {
+    color: $white-color;
+  }
+}
+
+.invalid-input{
+  color: red;
+}
+
+.input-is-invalid{
+  border: 1px solid red;
+}
+
+.button-primary{
+  background-color: $primary-color;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  width: 320px;
+  color: white;
+  margin: 20px 0;
+}
+
+.button-secondry{
+  background-color: white;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  width: 320px;
+  color: $primary-color;
+  margin: 10px 0;
+  border: 1px solid $primary-color;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.close-button{
+  float: right;
+  border: none;
+  background-color: #ffffff;
+  margin: 15px;
+}
+
+.adli-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.adli-container div{
+  flex-basis: 45%;
+}
+
+.input{
+  width: 90%;
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 78vh;
+}
+
+.common-adli{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 78vh;
+}
+
+.common-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+
+
+.login-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+}
+
+.title{
+ color: $secondry-color;
+ font-size: 50px;
+ font-weight: 700;
+ padding-bottom: 15px;
+}
+
+.sub-title{
+  font-size: 24px;
+  line-height: 1.5;
+  color: $secondry-color;
+}
+
+.left{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.common-left{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right{
+  width: 100%;
+}
+
+.right img{
+width: 100%;
+height: 100%;
+}
+
+.input-f{
+  width: 100%;
+  min-width: 320px;
+}
+
+.input-box{
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+  border-radius: 40px;
+  outline: none;
+  // border: 1px solid $secondry-color;
+  padding: 28px;
+  font-size: 18px;
+  // opacity: 0.6;
+}
+
+.adli-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+////
+.forgotModal{
+  padding: 20px;
+}
